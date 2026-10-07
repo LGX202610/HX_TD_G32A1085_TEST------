@@ -98,7 +98,7 @@ int main(void)
 	uint8_t sw[LEN_SW_VERSION]={0};
 	TP_LengthType sw_len=0;
 	Did_Read(0xF189,sw,&sw_len);
-	printf("Enter APP Successfully--261010-->>> SW = %s\r\n",sw);
+	printf("Enter APP Successfully--261007-->>> SW = %s\r\n",sw);
 	
 	while (1)
 	{
