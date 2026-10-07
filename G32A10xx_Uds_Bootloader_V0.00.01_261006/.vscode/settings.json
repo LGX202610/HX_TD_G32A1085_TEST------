@@ -1,0 +1,23 @@
+{
+  "files.encoding": "gb2312",
+  "files.autoGuessEncoding": false,
+  "files.associations": {
+    "*.h": "c",
+    "*.c": "c"
+  },
+  "editor.multiCursorModifier": "alt",
+  "editor.gotoLocation.multipleDefinitions": "peek",
+  "editor.gotoLocation.multipleDeclarations": "peek",
+  "editor.gotoLocation.multipleImplementations": "peek",
+  "editor.inlayHints.enabled": "off",
+  "C_Cpp.intelliSenseEngine": "Disabled",
+  "C_Cpp.inlayHints.parameterNames.enabled": false,
+  "C_Cpp.inlayHints.autoDeclarationTypes.enabled": false,
+  "clangd.arguments": [
+    "--background-index",
+    "--clang-tidy=false",
+    "--header-insertion=never",
+    "--completion-style=detailed",
+    "--compile-commands-dir=${workspaceFolder}"
+  ]
+}

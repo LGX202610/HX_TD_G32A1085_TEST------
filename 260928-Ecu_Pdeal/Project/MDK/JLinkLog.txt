@@ -1,0 +1,159 @@
+T77A4 000:165.852   SEGGER J-Link V9.72 Log File
+T77A4 000:166.017   DLL Compiled: Aug 26 2026 14:33:17
+T77A4 000:166.035   Logging started @ 2026-09-28 02:30
+T77A4 000:166.052   Process: D:\Program Files\Keil_v5.36\UV4\UV4.exe
+T77A4 000:166.074 - 166.069ms 
+T77A4 000:166.096 JLINK_SetWarnOutHandler(...)
+T77A4 000:166.113 - 0.018ms 
+T77A4 000:166.132 JLINK_OpenEx(...)
+T77A4 000:171.806   Firmware: J-Link V9 compiled Dec 13 2022 11:14:50
+T77A4 000:173.859   Firmware: J-Link V9 compiled Dec 13 2022 11:14:50
+T77A4 000:174.001   Decompressing FW timestamp took 94 us
+T77A4 000:182.127   Hardware: V9.70
+T77A4 000:182.184   S/N: 69730369
+T77A4 000:182.224   OEM: SEGGER
+T77A4 000:182.265   Feature(s): RDI, GDB, FlashDL, FlashBP, JFlash
+T77A4 000:184.489   Bootloader: (FW returned invalid version)
+T77A4 000:186.893   TELNET listener socket opened on port 19021
+T77A4 000:187.079   WEBSRV WEBSRV_Init(): Starting webserver thread(s)
+T77A4 000:187.341   WEBSRV Webserver running on local port 19080
+T77A4 000:187.538   Looking for J-Link GUI Server exe at: D:\Program Files\Keil_v5.36\ARM\Segger\JLinkGUIServer.exe
+T77A4 000:187.903   Looking for J-Link GUI Server exe at: C:\Program Files\SEGGER\JLink_V972\JLinkGUIServer.exe
+T77A4 000:188.041   Forking J-Link GUI Server: C:\Program Files\SEGGER\JLink_V972\JLinkGUIServer.exe
+T77A4 000:397.942   J-Link GUI Server info: "J-Link GUI server V9.72 "
+T77A4 000:401.069 - 234.930ms returns "O.K."
+T77A4 000:401.126 JLINK_GetEmuCaps()
+T77A4 000:401.155 - 0.026ms returns 0xB9FF7BBF
+T77A4 000:401.183 JLINK_TIF_GetAvailable(...)
+T77A4 000:401.840 - 0.656ms 
+T77A4 000:401.873 JLINK_SetErrorOutHandler(...)
+T77A4 000:401.891 - 0.018ms 
+T77A4 000:401.927 JLINK_ExecCommand("ProjectFile = "D:\0-GanXing\0-huixin\4-HX_DT_ECU\0-Code_Project\HX_ECU_PDEAL_AB_V0910\260928-Ecu_Pdeal\Project\MDK\JLinkSettings.ini"", ...). 
+T77A4 000:423.470   Ref file found at: D:\Program Files\Keil_v5.36\ARM\Segger\JLinkDevices.ref
+T77A4 000:423.735   REF file references invalid XML file: C:\Program Files\SEGGER\JLink_V972\JLinkDevices.xml
+T77A4 000:423.960   Flash bank @ 0x08000000: SFL: Parsing sectorization info from ELF file
+T77A4 000:423.996     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000200, .SectorStartAddr = 0x00000000
+T77A4 000:424.029   FlashBank @0x08000000: Sectorization info from SFL ELF file ignored because sectorization override from DLL / XML file is active.
+T77A4 000:424.098   Flash bank @ 0x08040000: SFL: Parsing sectorization info from ELF file
+T77A4 000:424.132     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000200, .SectorStartAddr = 0x00000000
+T77A4 000:424.164   FlashBank @0x08040000: Sectorization info from SFL ELF file ignored because sectorization override from DLL / XML file is active.
+T77A4 000:424.224   Flash bank @ 0x1FFFF800: SFL: Parsing sectorization info from ELF file
+T77A4 000:424.262     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000010, .SectorStartAddr = 0x00000000
+T77A4 000:424.322   Device "G32A1085MAT0" selected.
+T77A4 000:424.791 - 22.865ms returns 0x00
+T77A4 000:424.831 JLINK_ExecCommand("Device = G32A1085MAT0MLHx", ...). 
+T77A4 000:425.004   Flash bank @ 0x08000000: SFL: Parsing sectorization info from ELF file
+T77A4 000:425.044     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000200, .SectorStartAddr = 0x00000000
+T77A4 000:425.083   FlashBank @0x08000000: Sectorization info from SFL ELF file ignored because sectorization override from DLL / XML file is active.
+T77A4 000:425.140   Flash bank @ 0x08040000: SFL: Parsing sectorization info from ELF file
+T77A4 000:425.181     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000200, .SectorStartAddr = 0x00000000
+T77A4 000:425.222   FlashBank @0x08040000: Sectorization info from SFL ELF file ignored because sectorization override from DLL / XML file is active.
+T77A4 000:425.256   Flash bank @ 0x1FFFF800: SFL: Parsing sectorization info from ELF file
+T77A4 000:425.281     FlashDevice.SectorInfo[0]: .SectorSize = 0x00000010, .SectorStartAddr = 0x00000000
+T77A4 000:425.310   Device "G32A1085MAT0" selected.
+T77A4 000:425.785 - 0.954ms returns 0x00
+T77A4 000:425.816   ERROR: Unknown command
+T77A4 000:425.845 JLINK_GetHardwareVersion()
+T77A4 000:425.864 - 0.017ms returns 97000
+T77A4 000:425.882 JLINK_GetDLLVersion()
+T77A4 000:425.899 - 0.017ms returns 97200
+T77A4 000:425.918 JLINK_GetOEMString(...)
+T77A4 000:425.936 JLINK_GetFirmwareString(...)
+T77A4 000:425.953 - 0.017ms 
+T77A4 000:425.973 JLINK_GetDLLVersion()
+T77A4 000:425.990 - 0.017ms returns 97200
+T77A4 000:426.008 JLINK_GetCompileDateTime()
+T77A4 000:426.025 - 0.017ms 
+T77A4 000:426.044 JLINK_GetFirmwareString(...)
+T77A4 000:426.061 - 0.017ms 
+T77A4 000:426.080 JLINK_GetHardwareVersion()
+T77A4 000:426.097 - 0.017ms returns 97000
+T77A4 000:426.115 JLINK_GetSN()
+T77A4 000:426.133 - 0.017ms returns 69730369
+T77A4 000:426.151 JLINK_GetOEMString(...)
+T77A4 000:426.171 JLINK_TIF_Select(JLINKARM_TIF_SWD)
+T77A4 000:428.657 - 2.485ms returns 0x00
+T77A4 000:428.737 JLINK_HasError()
+T77A4 000:428.773 JLINK_SetSpeed(5000)
+T77A4 000:429.405 - 0.633ms 
+T77A4 000:429.808 JLINK_HasError()
+T77A4 000:429.840 JLINK_SetResetType(JLINKARM_RESET_TYPE_NORMAL)
+T77A4 000:429.863 - 0.022ms returns JLINKARM_RESET_TYPE_NORMAL
+T77A4 000:429.893 JLINK_Reset()
+T77A4 000:430.652   InitTarget() start
+T77A4 000:430.686    J-Link Script File: Executing InitTarget()
+T77A4 000:433.010   Check if Flash is read protected.
+T77A4 000:438.155   InitTarget() end - Took 7.46ms
+T77A4 000:439.658   Found SW-DP with ID 0x0BC11477
+T77A4 000:443.215   Old FW that does not support reading DPIDR via DAP jobs
+T77A4 000:444.232   DPv0 detected
+T77A4 000:444.279   CoreSight SoC-400 or earlier
+T77A4 000:444.318   Scanning AP map to find all available APs
+T77A4 000:445.825   AP[1]: Stopped AP scan as end of AP map has been reached
+T77A4 000:445.865   AP[0]: AHB-AP (IDR: 0x04770031, ADDR: 0x00000000)
+T77A4 000:445.902   Iterating through AP map to find AHB-AP to use
+T77A4 000:447.579   AP[0]: Core found
+T77A4 000:447.612   AP[0]: AHB-AP ROM base: 0xE00FF000
+T77A4 000:448.411   CPUID register: 0x410CC601. Implementer code: 0x41 (ARM)
+T77A4 000:448.446   Found Cortex-M0 r0p1, Little endian.
+T77A4 000:449.698   -- Max. mem block: 0x00010BB0
+T77A4 000:450.984   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77A4 000:451.683   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T77A4 000:452.446   CPU_ReadMem(4 bytes @ 0xE0002000)
+T77A4 000:453.169   FPUnit: 4 code (BP) slots and 0 literal slots
+T77A4 000:453.207   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T77A4 000:453.927   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T77A4 000:454.700   CPU_ReadMem(4 bytes @ 0xE0001000)
+T77A4 000:455.422   CPU_WriteMem(4 bytes @ 0xE0001000)
+T77A4 000:456.183   CoreSight components:
+T77A4 000:456.219   ROMTbl[0] @ E00FF000
+T77A4 000:456.252   CPU_ReadMem(64 bytes @ 0xE00FF000)
+T77A4 000:457.177   CPU_ReadMem(32 bytes @ 0xE000EFE0)
+T77A4 000:458.045   [0][0]: E000E000 CID B105E00D PID 000BB008 SCS
+T77A4 000:458.079   CPU_ReadMem(32 bytes @ 0xE0001FE0)
+T77A4 000:458.943   [0][1]: E0001000 CID B105E00D PID 000BB00A DWT
+T77A4 000:459.002   CPU_ReadMem(32 bytes @ 0xE0002FE0)
+T77A4 000:459.936   [0][2]: E0002000 CID B105E00D PID 000BB00B FPB
+T77A4 000:460.031   JLINK_GetResetTypeDesc
+T77A4 000:460.050   - 0.019ms 
+T77A4 000:460.070   Reset type: NORMAL (https://kb.segger.com/J-Link_Reset_Strategies)
+T77A4 000:460.090   CPU is running
+T77A4 000:460.121   CPU_WriteMem(4 bytes @ 0xE000EDF0)
+T77A4 000:460.829   CPU is running
+T77A4 000:460.863   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T77A4 000:461.631   Reset: Halt core after reset via DEMCR.VC_CORERESET.
+T77A4 000:462.980   Reset: Reset device via AIRCR.SYSRESETREQ.
+T77A4 000:463.013   CPU is running
+T77A4 000:463.046   CPU_WriteMem(4 bytes @ 0xE000ED0C)
+T77A4 000:520.405   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77A4 000:521.208   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77A4 000:524.714   CPU_WriteMem(4 bytes @ 0xE000EDFC)
+T77A4 000:531.350   CPU_ReadMem(4 bytes @ 0xE000EDF0)
+T77A4 000:534.838   CPU_WriteMem(4 bytes @ 0xE0002000)
+T77A4 000:535.558   CPU_ReadMem(4 bytes @ 0xE000EDFC)
+T77A4 000:536.314   CPU_ReadMem(4 bytes @ 0xE0001000)
+T77A4 000:537.057   CPU_WriteMem(4 bytes @ 0xE0001000)
+T77A4 000:537.822 - 107.928ms 
+T77A4 000:537.914 JLINK_GetId()
+T77A4 000:538.619 - 0.704ms returns 0x0BC11477
+T77A4 000:546.220 JLINK_GetFirmwareString(...)
+T77A4 000:546.280 - 0.060ms 
+T77A4 002:672.833 JLINK_SWO_Control(JLINKARM_SWO_CMD_GET_SPEED_INFO, ...)
+T77A4 002:673.719 - 0.886ms returns 0x00
+T77A4 002:673.749 JLINK_SWO_Control(JLINKARM_SWO_CMD_GET_SPEED_INFO, ...)
+T77A4 002:674.358 - 0.608ms returns 0x00
+T77A4 002:674.596 JLINK_SWO_Control(JLINKARM_SWO_CMD_GET_SPEED_INFO, ...)
+T77A4 002:675.254 - 0.657ms returns 0x00
+T77A4 003:722.260 JLINK_SWO_Control(JLINKARM_SWO_CMD_GET_SPEED_INFO, ...)
+T77A4 003:723.129 - 0.868ms returns 0x00
+T77A4 003:723.168 JLINK_SWO_Control(JLINKARM_SWO_CMD_GET_SPEED_INFO, ...)
+T77A4 003:723.920 - 0.751ms returns 0x00
+T77A4 003:723.959 JLINK_SWO_Control(JLINKARM_SWO_CMD_GET_SPEED_INFO, ...)
+T77A4 003:724.652 - 0.692ms returns 0x00
+T77A4 010:070.533 JLINK_Close()
+T77A4 010:071.539   CPU_ReadMem(4 bytes @ 0xE0001000)
+T77A4 010:072.314   CPU_WriteMem(4 bytes @ 0xE0001000)
+T77A4 010:073.067   CPU_WriteMem(4 bytes @ 0xE0001004)
+T77A4 010:100.589 - 30.055ms
+T77A4 010:100.648   
+T77A4 010:100.674   Closed

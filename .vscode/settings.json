@@ -1,0 +1,15 @@
+{
+  "files.encoding": "gb2312",
+  "files.autoGuessEncoding": false,
+  "files.associations": {
+    "*.h": "c",
+    "*.c": "c"
+  },
+  "editor.gotoLocation.multipleDefinitions": "peek",
+  "clangd.arguments": [
+    "--background-index=false",
+    "--clang-tidy=false",
+    "--header-insertion=never",
+    "--completion-style=detailed"
+  ]
+}

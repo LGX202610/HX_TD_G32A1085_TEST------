@@ -1,0 +1,111 @@
+#! armclang --target=arm-arm-none-eabi -mcpu=cortex-m4 -xc -E
+/*
+ * modified by ARM
+ *
+ * If __flash_vector_table__ is defined then interrupt vector table is not copied to RAM.
+ * If __flash_vector_table__ is defined at link time then it must also be defined for
+ * assembling startup_14*.s
+ */
+
+/*!
+ * @file        g32a1065_flash_bootloader.sct
+ *
+ * @brief       Linker file for the ARM Compiler
+ *
+ * @version     V1.0.0
+ *
+ * @date        2026-06-03
+ *
+ * @attention
+ *
+ *  Copyright (C) 2026 Geehy Semiconductor
+ *
+ *  You may not use this file except in compliance with the
+ *  GEEHY COPYRIGHT NOTICE (GEEHY SOFTWARE PACKAGE LICENSE).
+ *
+ *  The program is only for reference, which is distributed in the hope
+ *  that it will be useful and instructional for customers to develop
+ *  their software. Unless required by applicable law or agreed to in
+ *  writing, the program is distributed on an "AS IS" BASIS, WITHOUT
+ *  ANY WARRANTY OR CONDITIONS OF ANY KIND, either express or implied.
+ *  See the GEEHY SOFTWARE PACKAGE LICENSE for the governing permissions
+ *  and limitations under the License.
+ */
+
+#define start_interrupts             0x08000000
+#define size_interrupts              0x00000100
+
+#define start_text                   0x08000100
+#define size_text                    0x00007900  /* 30K */
+
+#define start_APP_INFO               0x08007A00
+#define size_APP_INFO                0x00000200  /* 512B */
+
+#define start_flash_driver           0x20000000
+#define size_flash_driver            0x00000400  /* 1KB */
+
+#define start_data                   0x20000400
+#define size_data                    0x20003FEF - 0x20000400
+
+#define start_exchange_info         0x20003FF0
+#define size_exchange_info          0x00000010
+
+/* Sizes */
+#define Heap_Size                    0x0200
+#define Stack_Size                   0x0800
+
+
+LR_m_text start_interrupts start_text+size_text-start_interrupts {
+  VECTOR_ROM start_interrupts size_interrupts {
+    startup_g32a1*.o (RESET +First)
+  }
+
+  ER_flash_rsvd_fls_region +0 {
+    * (.acfls_code_rom)
+  }
+
+  TEXT_CONST start_text FIXED {
+    * (.mcal_text*)
+    * (.text*)
+    * (InRoot$$Sections)
+    .ANY (+RO)
+  }
+
+  ER_app_ro_data_region +0 {
+    * (.rodata*)
+    * (.mcal_const_cfg*)
+    * (.mcal_const*)
+  }
+
+  RW_DATA start_data {
+    * (.mcal_data*)
+    * (.data*)
+    .ANY (+RW-DATA)
+  }
+
+  RW_CODE +0 size_data {
+    .ANY (.ramcode)
+  }
+
+  ER_app_bss_no_cache_region +0 {
+
+    * (.mcal_bss_no_cacheable)
+  }
+
+  ER_app_data_no_cache_region +0 {
+
+    * (.mcal_data_no_cacheable)
+  }
+  
+  ER_app_bss_region +0 {
+    * (.mcal_bss*)
+    * (.bss*)
+  }
+
+  ARM_LIB_HEAP +0 EMPTY Heap_Size {
+  }
+
+  ARM_LIB_STACK 0x20003FE0 -Stack_Size {
+    * (.stack_main*)
+  }
+}

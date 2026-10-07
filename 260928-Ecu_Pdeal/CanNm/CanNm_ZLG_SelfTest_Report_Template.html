@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8" />
+<title>CanNm自测报告</title>
+</head>
+<body>
+
+<h1>CanNm 网络管理自测报告</h1>
+<p>电动踏板 ECU　　内部自测　　编号：____________　　版本：A/0</p>
+
+<h2>1 测试工具</h2>
+<table>
+  <tr><th>类别</th><th>名称 / 型号</th><th>版本或编号</th><th>备注</th></tr>
+  <tr><td>CAN 分析仪</td><td>周立功</td><td></td><td></td></tr>
+  <tr><td>上位机软件</td><td>ZCANPRO</td><td></td><td>自定义发送 + 跟踪</td></tr>
+  <tr><td>电源</td><td></td><td></td><td></td></tr>
+  <tr><td>其它</td><td></td><td></td><td>电流表 / 调试器（如使用）</td></tr>
+</table>
+
+<h2>2 测试环境与环节</h2>
+<table>
+  <tr><th>项目</th><th>内容</th></tr>
+  <tr><td>地点 / 台架</td><td></td></tr>
+  <tr><td>日期</td><td></td></tr>
+  <tr><td>测试人员</td><td></td></tr>
+  <tr><td>总线</td><td>CAN 2.0A，标准帧，500 kbit/s，终端 120 Ω　□已核对</td></tr>
+  <tr><td>本节点 NM</td><td>ECU 发送 ID 0x441，DLC=8，NodeId（Byte0）=0x41</td></tr>
+  <tr><td>对端仿 NM</td><td>工具发送 ID 0x401（当前 ECU 接收邮箱；与矩阵不一致时在此更正：______）</td></tr>
+  <tr><td>测试环节</td><td>1）通电与通路　2）报文合规　3）状态机 NM02～NM17　4）部分网络　5）应用耦合 / 负面（可选）</td></tr>
+</table>
+<p>标准刺激帧：PN保持 = 0x401 / 00 40 02 00 00 00 00 00；PN+RMR = 00 41 02 00 00 00 00 00；无PNI = 00 00 02 00 00 00 00 00；非本簇 = 00 40 00 00 00 00 00 00。</p>
+<p>时间参数（配置）：快发 20 ms×10，正常 500 ms，RMS 1600 ms，NmTimeout 2000 ms，WaitBusSleep 2000 ms，PnReset 1500 ms。</p>
+
+<h2>3 软硬件</h2>
+<table>
+  <tr><th>项目</th><th>版本 / 编号</th><th>项目</th><th>版本 / 编号</th></tr>
+  <tr><td>硬件样件</td><td></td><td>PCB / BOM</td><td></td></tr>
+  <tr><td>软件版本</td><td></td><td>Git / 编译日期</td><td></td></tr>
+  <tr><td>CanNm 配置</td><td>CanNm_Cfg.h 等</td><td>Boot / 其它</td><td></td></tr>
+</table>
+
+<h2>4 测试总纲</h2>
+<table>
+  <tr><th>编号</th><th>对应条款</th><th>测试项</th><th>是否通过</th></tr>
+  <tr><td>A1</td><td>—</td><td>总线通路</td><td></td></tr>
+  <tr><td>A2</td><td>—</td><td>NM ID / NodeId</td><td></td></tr>
+  <tr><td>A3</td><td>—</td><td>CBV（PNI / AW / RMR）</td><td></td></tr>
+  <tr><td>A4</td><td>—</td><td>PN 发送位</td><td></td></tr>
+  <tr><td>A5</td><td>—</td><td>Byte7 OEM 位</td><td></td></tr>
+  <tr><td>B1</td><td>NM02</td><td>BSM 本地唤醒快发</td><td></td></tr>
+  <tr><td>B2</td><td>NM03</td><td>BSM 远程唤醒（正常周期）</td><td></td></tr>
+  <tr><td>B3</td><td>NM04</td><td>快发结束切 500 ms</td><td></td></tr>
+  <tr><td>B4</td><td>NM05</td><td>RMS 内 Timeout 到期</td><td>N/A</td></tr>
+  <tr><td>B5</td><td>NM06</td><td>RMS 有请求 → NOS</td><td></td></tr>
+  <tr><td>B6</td><td>NM07</td><td>RMS 无请求 → RSS</td><td></td></tr>
+  <tr><td>B7</td><td>NM08</td><td>NOS 远程 RMR → RMS</td><td></td></tr>
+  <tr><td>B8</td><td>NM08</td><td>NOS 本地 RMR → RMS 快发</td><td></td></tr>
+  <tr><td>B9</td><td>NM09</td><td>NOS Timeout（保持不误睡 / 到期 N/A）</td><td></td></tr>
+  <tr><td>B10</td><td>NM10</td><td>NOS 释放 → RSS</td><td></td></tr>
+  <tr><td>B11</td><td>NM11</td><td>RSS 本地要网 → NOS</td><td></td></tr>
+  <tr><td>B12</td><td>NM12</td><td>RSS 下 RMR → RMS</td><td></td></tr>
+  <tr><td>B13</td><td>NM13</td><td>收到 NM 重装 Timeout</td><td></td></tr>
+  <tr><td>B14</td><td>NM14</td><td>RSS Timeout → PBSM</td><td></td></tr>
+  <tr><td>B15</td><td>NM15</td><td>PBSM 远程唤醒</td><td></td></tr>
+  <tr><td>B16</td><td>NM16</td><td>PBSM 本地唤醒快发</td><td></td></tr>
+  <tr><td>B17</td><td>NM17</td><td>PBSM → BSM</td><td></td></tr>
+  <tr><td>C1</td><td>PN</td><td>PNI=0 不唤醒</td><td></td></tr>
+  <tr><td>C2</td><td>PN</td><td>非本簇不唤醒</td><td></td></tr>
+  <tr><td>C3</td><td>PN</td><td>本簇唤醒</td><td></td></tr>
+  <tr><td>C4</td><td>PN</td><td>PnReset</td><td></td></tr>
+  <tr><td>C5</td><td>PN</td><td>仅远程保持网络</td><td></td></tr>
+  <tr><td>D1～D4</td><td>—</td><td>应用报文启停</td><td></td></tr>
+  <tr><td>E1～E2</td><td>—</td><td>负面（短 DLC / 错误 ID）</td><td></td></tr>
+</table>
+<p>是否通过填写：通过 / 不通过 / 未测 / N/A。总纲与分项结论须一致。</p>
+<p>总结论：□ 通过　　□ 带偏差通过　　□ 不通过</p>
+
+<h2>5 分项记录</h2>
+
+<h3>A1 总线通路</h3>
+<table>
+  <tr><th>测试内容</th><td>不通工具发送，ECU 上电，确认能否发出试验帧；再单次发送 0x401（任意 8 字节），确认 ACK。目的：物理层与波特率。</td></tr>
+  <tr><th>测试结果</th><td>0x100：________　　Error Frame：有 / 无　　0x401 ACK：成功 / 失败　　上电后有无周期 0x441：有 / 无<br/>跟踪文件：________</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>A2 NM ID / NodeId</h3>
+<table>
+  <tr><th>测试内容</th><td>周期 500 ms 发送 PN保持，使 ECU 进入网络模式。检查本节点 NM：ID、DLC、Byte0。</td></tr>
+  <tr><th>测试结果</th><td>ID：________　　DLC：________　　Byte0：________　　采样帧数：________<br/>ECU 是否自发 0x401：是 / 否</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测　　期望：0x441 / 8 / 0x41，不自发 0x401</td></tr>
+</table>
+
+<h3>A3 CBV</h3>
+<table>
+  <tr><th>测试内容</th><td>A3-1：周期 PN保持，看远程路径 Byte1。A3-2（可选）：BSM 下本地要网、不发 0x401，看本地路径 Byte1。</td></tr>
+  <tr><th>测试结果</th><td>A3-1 Byte1：________（期望 0x40）<br/>A3-2 首帧 / RMS / NOS：________ / ________ / ________（期望 0x51 / 0x41 / 0x40）□ 未做 A3-2</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 部分通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>A4 PN 发送位</h3>
+<table>
+  <tr><th>测试内容</th><td>A4-1 仅远程 PN保持，看 0x441 的 Byte2 bit1。A4-2 调用 LocalPncRequest(0)。A4-3 LocalPncRelease 后仍发 PN保持。</td></tr>
+  <tr><th>测试结果</th><td>A4-1 Byte2：________（期望 bit1=0）<br/>A4-2 Byte2：________（期望 02）□ 未做<br/>A4-3 Byte2 / 是否仍发 NM：________ / ________　□ 未做</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 部分通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>A5 Byte7 OEM 位</h3>
+<table>
+  <tr><th>测试内容</th><td>远程保持：看 RMS 与 NOS 的 Byte7。可选本地醒：看首帧 Byte7。</td></tr>
+  <tr><th>测试结果</th><td>远程 RMS / NOS：________ / ________（期望 01 / 00）<br/>本地首帧：________（期望 03）□ 未做</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 部分通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B1 NM02 BSM 本地唤醒快发</h3>
+<table>
+  <tr><th>测试内容</th><td>BSM，不发 0x401，本地要网。检查首帧时刻、20 ms 密发、首帧 41 51 … 03。</td></tr>
+  <tr><th>测试结果</th><td>T_WakeUp：________ ms（期望 ≤200）<br/>密发间隔 / 帧数：________ / ________<br/>第1帧 / 第2帧：________ / ________</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B2 NM03 BSM 远程唤醒</h3>
+<table>
+  <tr><th>测试内容</th><td>发送 PN保持。对照发送无PNI、非本簇，均不应唤醒。</td></tr>
+  <tr><th>测试结果</th><td>0x441 间隔：________（期望 ~500 ms）<br/>首帧数据：________（期望 41 40 … 01）<br/>无PNI 唤醒：是 / 否　　非本簇唤醒：是 / 否（均应为否）</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B3 NM04 快发切 500 ms</h3>
+<table>
+  <tr><th>测试内容</th><td>复用 B1 跟踪。密发结束后周期应变为约 500 ms。</td></tr>
+  <tr><th>测试结果</th><td>快发帧数：________　　切换后间隔：________ ms</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不适用　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B4 NM05 RMS 内 Timeout 到期</h3>
+<table>
+  <tr><th>测试内容</th><td>本配置 RepeatMessage 1.6 s 短于 Timeout 2 s，且收发均重装 Timeout，到期分支不可达。</td></tr>
+  <tr><th>测试结果</th><td>未执行到期试验。</td></tr>
+  <tr><th>是否通过</th><td>□ N/A</td></tr>
+</table>
+
+<h3>B5 NM06 RMS 有请求 → NOS</h3>
+<table>
+  <tr><th>测试内容</th><td>周期 PN保持至结束。看 Byte7 由 01 变 00 后是否仍 500 ms 发送。</td></tr>
+  <tr><th>测试结果</th><td>t_nm0：________　　t_nos（Byte7→00）：________　　差值：________ s<br/>切后是否仍发：是 / 否<br/>说明：状态约 1.6 s 切换；本代码首帧 00 可约 2.1 s。</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B6 NM07 RMS 无请求 → RSS</h3>
+<table>
+  <tr><th>测试内容</th><td>PN保持只发 1 帧后停。不应做成周期保持（否则成 B5）。</td></tr>
+  <tr><th>测试结果</th><td>0x441 帧数：________（期望约 4，数据 …01）<br/>之后 2 s 内是否还有 0x441：是 / 否（期望否）</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B7 NM08 NOS 远程 RMR</h3>
+<table>
+  <tr><th>测试内容</th><td>周期 PN保持至 Byte7=00；再发 PN+RMR 一帧；周期改回 PN保持。</td></tr>
+  <tr><th>测试结果</th><td>刺激前 Byte7：________　　再进 RMS：是 / 否　　Byte1：________（期望 0x40）　　有无 20 ms 密发：有 / 无</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B8 NM08 NOS 本地 RMR</h3>
+<table>
+  <tr><th>测试内容</th><td>周期 PN保持维持 NOS。调用 CanNm_RepeatMessageRequest()。不发 PN+RMR。</td></tr>
+  <tr><th>测试结果</th><td>密发：有 / 无　　Byte1：________（期望 0x41）</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B9 NM09 NOS Timeout</h3>
+<table>
+  <tr><th>测试内容</th><td>周期 PN保持，NOS 后再观察 ≥5 s。验证有流量时不误睡。到期分支标 N/A。停对端属 B10，不作本项刺激。</td></tr>
+  <tr><th>测试结果</th><td>NOS 保持 ≥5 s 是否一直发 0x441：是 / 否</td></tr>
+  <tr><th>是否通过</th><td>□ 通过（保持）　　□ 不通过　　□ 到期 N/A　　□ 未测</td></tr>
+</table>
+
+<h3>B10 NM10 NOS 释放 → RSS</h3>
+<table>
+  <tr><th>测试内容</th><td>周期 PN保持至 NOS，记最后一帧对端时刻 t_stop 后停发。</td></tr>
+  <tr><th>测试结果</th><td>收尾 0x441 帧数：________（期望约 3）<br/>t_last ? t_stop：________ s　　之后是否还发：是 / 否（期望否）</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B11 NM11 RSS 本地要网 → NOS</h3>
+<table>
+  <tr><th>测试内容</th><td>B10 静默后 2 s 内、不发 0x401，本地要网。</td></tr>
+  <tr><th>测试结果</th><td>t_tx ? t_req：________ ms（期望约 500）　　Byte1 / Byte7：________ / ________（期望 40 / 00）　　密发：有 / 无</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B12 NM12 RSS 下 RMR</h3>
+<table>
+  <tr><th>测试内容</th><td>RSS 静默且未满 2 s。远程：PN+RMR 一帧。对照：PN保持一帧应无 0x441。可选本地 RepeatMessageRequest。</td></tr>
+  <tr><th>测试结果</th><td>PN+RMR：有 / 无 0x441，间隔 / Byte1：________<br/>对照 PN保持：有 / 无 0x441（期望无）<br/>本地 RMR：________　□ 未做</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B13 NM13 收 NM 重装 Timeout</h3>
+<table>
+  <tr><th>测试内容</th><td>先做 B10 得 T_last。对照：T_last+2.5 s 发 PN保持一帧。正式：复位重做 B10 后，于 +1.5 s、+2.5 s、+3.7 s 各发 PN保持一帧（不要 RMR）。</td></tr>
+  <tr><th>测试结果</th><td>对照 +2.5 s 有 0x441：有 / 无（期望有）<br/>正式 +1.5 / +2.5 / +3.7 s：________ / ________ / ________（期望 无 / 无 / 有）</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B14 NM14 RSS Timeout → PBSM</h3>
+<table>
+  <tr><th>测试内容</th><td>B10 后至 T_last+2.5 s 不发 0x401，再发 PN保持一帧。</td></tr>
+  <tr><th>测试结果</th><td>等待期有 0x441：有 / 无（期望无）<br/>探针后帧数 / 数据：________ / ________（期望 4 帧 41 40 … 01）</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B15 NM15 PBSM 远程唤醒</h3>
+<table>
+  <tr><th>测试内容</th><td>T_last+2.5～4.0 s 发 PN保持一帧。B14 探针已满足可合并判定。</td></tr>
+  <tr><th>测试结果</th><td>探针时刻：T_last+________ s　　帧数：________　　□ 与 B14 合并</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B16 NM16 PBSM 本地唤醒快发</h3>
+<table>
+  <tr><th>测试内容</th><td>T_last+2.5～4.0 s，不发 0x401，本地要网（不可 RepeatMessageRequest）。NM16 规范未要求 RMR，首帧期望 41 50 … 03。</td></tr>
+  <tr><th>测试结果</th><td>第1帧 / 第2帧：________ / ________<br/>密发间隔 / 帧数：________ / ________</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>B17 NM17 PBSM → BSM</h3>
+<table>
+  <tr><th>测试内容</th><td>T_last 至 +5.0 s 静默、无 0x401，然后本地要网。用首帧区分：51 为已进 BSM（NM02），50 为仍在 PBSM（NM16）。</td></tr>
+  <tr><th>测试结果</th><td>第1帧：________</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>C1 PNI=0 不唤醒</h3>
+<table>
+  <tr><th>测试内容</th><td>BSM 下发送无PNI。</td></tr>
+  <tr><th>测试结果</th><td>出现 0x441：是 / 否（期望否）</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>C2 非本簇不唤醒</h3>
+<table>
+  <tr><th>测试内容</th><td>BSM 下发送非本簇。</td></tr>
+  <tr><th>测试结果</th><td>出现 0x441：是 / 否（期望否）</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>C3 本簇唤醒</h3>
+<table>
+  <tr><th>测试内容</th><td>发送 PN保持。可与 B2 合并。</td></tr>
+  <tr><th>测试结果</th><td>出现 0x441：是 / 否　　□ 同 B2</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>C4 PnReset</h3>
+<table>
+  <tr><th>测试内容</th><td>同 B10：停有效 PN 后 ERA 延时。</td></tr>
+  <tr><th>测试结果</th><td>收尾帧数 / 延时：________ / ________　　□ 同 B10</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>C5 仅远程保持网络</h3>
+<table>
+  <tr><th>测试内容</th><td>无本地请求，周期 PN保持。</td></tr>
+  <tr><th>测试结果</th><td>是否持续发 0x441：是 / 否</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>D 组 应用报文</h3>
+<table>
+  <tr><th>测试内容</th><td>D1 本地醒后首帧 NM 时刻。D2 相对首帧 NM 的应用 ID（填写：________）。D3 NOS 期间应用是否周期发送。D4 睡眠后应用是否停止。</td></tr>
+  <tr><th>测试结果</th><td>D1：________ ms　　D2：________ ms　　D3：是 / 否　　D4：是 / 否</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h3>E 组 负面</h3>
+<table>
+  <tr><th>测试内容</th><td>E1：0x401、DLC=1。E2：向 ECU 发送 0x441（在收邮箱为 0x401 时）。</td></tr>
+  <tr><th>测试结果</th><td>E1：________　　E2：________</td></tr>
+  <tr><th>是否通过</th><td>□ 通过　　□ 不通过　　□ 未测</td></tr>
+</table>
+
+<h2>6 偏差说明</h2>
+<table>
+  <tr><th>编号</th><th>内容</th><th>相关项</th><th>处理</th></tr>
+  <tr><td>1</td><td>NOS 可见首帧 Byte7=00 可约 2.1 s（切状态约 1.6 s）</td><td>B5</td><td></td></tr>
+  <tr><td>2</td><td>快发常见 11 帧</td><td>B1 / B3</td><td></td></tr>
+  <tr><td>3</td><td>接收 ID 0x401、发送 0x441</td><td>A2 / B2</td><td></td></tr>
+  <tr><td>4</td><td>NM16 首帧 CBV=50，规范未要求 RMR</td><td>B16</td><td></td></tr>
+  <tr><td>5</td><td>RSS 无 RMR 的 PN 不回到 NOS</td><td>B11 / B12</td><td></td></tr>
+  <tr><td></td><td></td><td></td><td></td></tr>
+</table>
+<p>跟踪 / 附件：________________________________</p>
+
+<h2>7 签署</h2>
+<table>
+  <tr><th>角色</th><th>姓名</th><th>日期</th><th>签字</th></tr>
+  <tr><td>测试</td><td></td><td></td><td></td></tr>
+  <tr><td>开发</td><td></td><td></td><td></td></tr>
+  <tr><td>审核</td><td></td><td></td><td></td></tr>
+</table>
+
+</body>
+</html>

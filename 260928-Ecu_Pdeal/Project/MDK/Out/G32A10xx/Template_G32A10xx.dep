@@ -1,0 +1,204 @@
+Dependencies for Project 'Template', Target 'G32A10xx': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Source\system_g32a10xx.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/system_g32a10xx.o -MD)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_fls.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Source\arm\startup_g32a10xx_mdk.s)(0x6A16B3BB)(--cpu Cortex-M0+ -g --pd "__MICROLIB SETA 1"-ID:\Users\lscha\AppData\Local\Arm\Packs\Geehy\G32A10xx_DFP\1.0.1\Device\Include--pd "__UVISION_VERSION SETA 538"--pd "CPU_G32A1085MAT0MLHx SETA 1"--list .\listings\g32a10xx\startup_g32a10xx_mdk.lst--xref -o .\out\g32a10xx\startup_g32a10xx_mdk.o--depend .\out\g32a10xx\startup_g32a10xx_mdk.d)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_adc.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_adc.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_adc.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_crc.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_crc.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_crc.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_dbgmcu.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_dbgmcu.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_dbgmcu.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_dma.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_dma.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_dma.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_eint.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_eint.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_eint.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_fls.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_fls.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_fls.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_gpio.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_gpio.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_iwdt.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_iwdt.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_iwdt.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_misc.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_misc.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_pmu.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_pmu.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_pmu.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_rcm.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_rcm.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_rtc.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_rtc.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rtc.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_spi.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_spi.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_spi.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_syscfg.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_syscfg.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_syscfg.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_tmr.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_tmr.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_tmr.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_usart.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_usart.o -MD)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_usart.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BB)
+F (..\..\..\..\..\..\Boards\Board.c)(0x6A16B3B9)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/board.o -MD)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_eint.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_syscfg.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Boards\Board.h)(0x6A16B3B9)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_usart.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BB)
+F (..\..\Source\main.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/main.o -MD)
+I (..\..\..\..\..\..\Boards\Board.h)(0x6A16B3B9)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_usart.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_eint.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_syscfg.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BB)
+F (..\..\Source\g32a10xx_int.c)(0x6A16B3BB)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -Os -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../../../../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../../../../../Libraries/CMSIS/Include -I ../../../../../../Libraries/Device/Geehy/G32A10xx/Include -I ../../../../../../Boards -I ../../Include-ID:/Users/lscha/AppData/Local/Arm/Packs/Geehy/G32A10xx_DFP/1.0.1/Device/Include-D__UVISION_VERSION="538" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx-o ./out/g32a10xx/g32a10xx_int.o -MD)
+I (..\..\Include\g32a10xx_int.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BB)
+I (D:\Keil_v5\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BB)
+I (..\..\..\..\..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BB)

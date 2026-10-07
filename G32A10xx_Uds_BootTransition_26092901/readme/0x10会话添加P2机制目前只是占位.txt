@@ -1,0 +1,134 @@
+已确认：原代码里没有 0x10 会话的 P2/P2 
+  超时机制。虽然配置表注释写了"存放 P2、P2"，但
+  UDS_APP_tTimeInfoStructType
+  结构体里根本没有这两个字段，也没有任何 P2
+  计时/超时逻辑。现在已补上，P2=50ms、P2*=2000ms。
+     
+  改动内容
+     
+  UDS_stack/.../UDS/inc/uds_app_cfg.h
+  - 时间配置结构体 UDS_APP_tTimeInfoStructType 增加
+    cP2Time、cP2StarTime 字段
+  - 运行时状态结构体 UDS_APP_tInfoStructType 增加
+    iP2Time、iP2StarTime、iP2StarPending（响应挂起标记）字段
+  - 声明 6 个 P2/P2* 接口函数
+
+  UDS_stack/.../UDS/src/uds_app_cfg.c
+  - 配置表 g_udsTimeConfigTable
+    补值：50u（P2）、2000u（P2*）
+  - g_udsConfiguration 初始化补 3 个字段
+  - 新增 P2/P2* 计时函数：
+    - UDS_APP_StartP2ServerTimer() /
+      UDS_APP_StartP2StarServerTimer() /
+      UDS_APP_StopP2StarServerTimer()
+    - UDS_APP_CheckP2ServerIsTimeout() /
+      UDS_APP_CheckP2StarServerIsTimeout() /
+      UDS_APP_IsP2StarPending()
+    - 以及配套的 acquire/decrement 递减函数
+  - UDS_APP_ShiftSession（0x10 处理）入口调用
+    UDS_APP_StartP2ServerTimer()，约束首次响应时限
+  - APP 工程进编程会话的 0x78 响应挂起路径接上
+    UDS_APP_StartP2StarServerTimer()
+  - UDS_APP_HandleSystemTicks（1ms 滴答）里新增 P2、P2*
+    计时自减
+
+  机制说明
+
+  - P2 = 50ms：收到 0x10 请求 → 首响应的时限。ShiftSession
+    入口启动，正常 50ms 内回复。
+  - P2* = 2000ms：如果会话切换超过 P2，先回 7F 10
+    78（响应挂起），然后在 2000ms
+    内给最终响应（UDS_APP_StartP2StarServerTimer +
+    挂起标记）。
+    挂起标记）。
+
+  需要你知道的一点
+
+  当前 bootloader 的 UDS_APP_ShiftSession
+  会话切换是瞬时的（只是 SetCurrentSession 赋值），所以
+  P2=50ms 一定满足、P2* 不会实际触发；只有 APP
+  工程「进编程会话 → 复位进 boot」这条路径会走 0x78，已接上
+  P2*。如果以后给 0x10 加了耗时操作（比如进编程会话时做
+  Flash 预擦除），只需在切会话前调
+  改动内容
+
+  UDS_stack/.../UDS/inc/uds_app_cfg.h
+  - 时间配置结构体 UDS_APP_tTimeInfoStructType
+    增加 cP2Time、cP2StarTime 字段
+  - 运行时状态结构体 UDS_APP_tInfoStructType
+    增加 iP2Time、iP2StarTime、iP2StarPending（
+    响应挂起标记）字段
+  - 声明 6 个 P2/P2* 接口函数
+
+  UDS_stack/.../UDS/src/uds_app_cfg.c
+  - 配置表 g_udsTimeConfigTable
+    补值：50u（P2）、2000u（P2*）
+  - g_udsConfiguration 初始化补 3 个字段
+  - 新增 P2/P2* 计时函数：
+    - UDS_APP_StartP2ServerTimer() /
+      UDS_APP_StartP2StarServerTimer() /
+      UDS_APP_StopP2StarServerTimer()
+    - UDS_APP_CheckP2ServerIsTimeout() /
+      UDS_APP_CheckP2StarServerIsTimeout() /
+      UDS_APP_IsP2StarPending()
+    - 以及配套的 acquire/decrement 递减函数
+  - UDS_APP_ShiftSession（0x10 处理）入口调用 UD
+    S_APP_StartP2ServerTimer()，约束首次响应时限
+  - APP 工程进编程会话的 0x78 响应挂起路径接上
+    UDS_APP_StartP2StarServerTimer()
+  - UDS_APP_HandleSystemTicks（1ms 滴答）里新增
+    P2、P2* 计时自减
+
+  机制说明
+
+  - P2 = 50ms：收到 0x10 请求 →
+    首响应的时限。ShiftSession 入口启动，正常
+    50ms 内回复。
+  - P2* = 2000ms：如果会话切换超过 P2，先回 7F
+    10 78（响应挂起），然后在 2000ms
+    内给最终响应（UDS_APP_StartP2StarServerTimer
+    + 挂起标记）。
+
+  需要你知道的一点
+
+  当前 bootloader 的 UDS_APP_ShiftSession
+  会话切换是瞬时的（只是 SetCurrentSession
+  - APP 工程进编程会话的 0x78 响应挂起路径接上 UDS_APP_StartP2StarServerTimer()
+  - UDS_APP_HandleSystemTicks（1ms 滴答）里新增 P2、P2* 计时自减
+
+  机制说明
+
+  - P2 = 50ms：收到 0x10 请求 → 首响应的时限。ShiftSession 入口启动，正常 50ms 内回复。
+  - P2* = 2000ms：如果会话切换超过 P2，先回 7F 10 78（响应挂起），然后在 2000ms 内给最终响应（UDS_APP_StartP2StarServerTimer +
+    挂起标记）。
+  - 新增 P2/P2* 计时函数：
+    - UDS_APP_StartP2ServerTimer() / UDS_APP_StartP2StarServerTimer() /
+      UDS_APP_StopP2StarServerTimer()
+    - UDS_APP_CheckP2ServerIsTimeout() / UDS_APP_CheckP2StarServerIsTimeout() /
+      UDS_APP_IsP2StarPending()
+    - 以及配套的 acquire/decrement 递减函数
+  - UDS_APP_ShiftSession（0x10 处理）入口调用 UDS_APP_StartP2ServerTimer()，约束首次响应时限
+  - APP 工程进编程会话的 0x78 响应挂起路径接上 UDS_APP_StartP2StarServerTimer()
+  - UDS_APP_HandleSystemTicks（1ms 滴答）里新增 P2、P2* 计时自减
+  - UDS_APP_HandleSystemTicks（1ms 滴答）里新增 P2、P2* 计时自减
+
+  机制说明
+
+  - P2 = 50ms：收到 0x10 请求 → 首响应的时限。ShiftSession 入口启动，正常 50ms 内回复。
+  - P2* = 2000ms：如果会话切换超过 P2，先回 7F 10 78（响应挂起），然后在 2000ms
+    内给最终响应（UDS_APP_StartP2StarServerTimer + 挂起标记）。
+
+  需要你知道的一点
+
+  当前 bootloader 的 UDS_APP_ShiftSession 会话切换是瞬时的（只是 SetCurrentSession 赋值），所以
+  P2=50ms 一定满足、P2* 不会实际触发；只有 APP 工程「进编程会话 → 复位进 boot」这条路径会走
+  0x78，已接上 P2*。如果以后给 0x10 加了耗时操作（比如进编程会话时做 Flash 预擦除），只需在切会话前调
+  UDS_APP_StartP2StarServerTimer() + 发 0x78，完成后调 UDS_APP_StopP2StarServerTimer() 即可；P2*
+  超时检测用 UDS_APP_CheckP2StarServerIsTimeout() 判断，恢复逻辑可仿照 S3 超时（UDS_MainFunction
+  里那段）加。
+
+  ---
+
+  另：IDE 报的 uds_app_cfg.h:3 找不到 includes.h/string.h 是 IntelliSense includePath
+  未配置导致的老问题（#include "includes.h" 本来就在第 3 行，与本次改动无关），不影响 Keil/IAR
+  实际编译。

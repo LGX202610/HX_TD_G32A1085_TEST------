@@ -1,0 +1,40 @@
+If:
+  PathMatch: .*(UDS_G32A1085_App|UDS_G32A1085_App_NC|[\\/]IAR[\\/]).*
+Index:
+  Background: Skip
+
+If:
+  PathMatch: .*G32A10xx_Uds_Bootloader_V0\.00\.01_260928.*
+CompileFlags:
+  CompilationDatabase: G32A10xx_Uds_Bootloader_V0.00.01_260928
+  Add:
+    - -std=c99
+    - -DUDS_PROJECT_FOR_BOOTLOADER
+    - -DG32A1085
+    - -DG32A10xx
+    - -ferror-limit=0
+    - -Wno-everything
+
+If:
+  PathMatch: .*G32A10xx_Uds_BootTransition_260928.*
+CompileFlags:
+  CompilationDatabase: G32A10xx_Uds_BootTransition_260928
+  Add:
+    - -std=c99
+    - -DUDS_PROJECT_FOR_BOOTLOADER
+    - -DG32A1085
+    - -DG32A10xx
+    - -ferror-limit=0
+    - -Wno-everything
+
+If:
+  PathMatch: .*260928-Ecu_Pdeal.*
+CompileFlags:
+  CompilationDatabase: 260928-Ecu_Pdeal
+  Add:
+    - -std=c99
+    - -DUDS_PROJECT_FOR_APP
+    - -DG32A10xx
+    - -DBOARD_G32A10xx_EVAL
+    - -ferror-limit=0
+    - -Wno-everything

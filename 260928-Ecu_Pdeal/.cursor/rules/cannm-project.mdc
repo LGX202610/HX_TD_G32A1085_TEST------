@@ -1,0 +1,11 @@
+---
+description: Hand-written CanNm: NM behavior and naming, no full AUTOSAR stack
+globs: CanNm/**/*
+alwaysApply: false
+---
+
+# CanNm
+
+CanNm 为手写 AUTOSAR NM，不上完整 AUTOSAR 栈、RTE/BSW/COM 和工具链生成代码。
+对外行为满足 AUTOSAR NM（含所需的 PN/PNC），内部结构可简化。
+新增宏、类型、变量、函数使用 AUTOSAR NM 命名。

@@ -1,0 +1,24 @@
+# 编译产物
+build/
+Debug/
+Release/
+*.o
+*.elf
+*.map
+*.lst
+*.axf
+
+# STM32工程备份文件
+*.ioc_backup
+
+# Cursor本地缓存、AI索引（不上传）
+/.cursor/
+
+# VSCode缓存（保留.vscode下的settings配置文件）
+.vscode/.cache/
+.vscode/*.log
+.vscode/ipch/
+
+# 操作系统垃圾文件
+.DS_Store
+Thumbs.db

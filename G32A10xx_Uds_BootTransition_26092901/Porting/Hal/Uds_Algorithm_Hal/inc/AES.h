@@ -1,0 +1,40 @@
+/*******************************************************************************
+* Project Name      : CAN/LIN Protocol Stack
+* Platform          : Arm
+* Revision Number   : V1.0
+* Compiled Version  : G32A1xxx_01-June-25
+*
+* Copyright (C) 2025 Geehy Semiconductor
+*
+* You may not use this file except in compliance with the GEEHY COPYRIGHT NOTICE
+* (GEEHY SOFTWARE PACKAGE LICENSE).
+*
+* The program is only for reference, which is distributed in the hope that it
+* will be useful and instructional for customers to develop their software.
+* Unless required by applicable law or agreed to in writing, the program is
+* distributed on an "AS IS" BASIS, WITHOUT ANY WARRANTY OR CONDITIONS OF ANY
+* KIND, either express or implied. See the GEEHY SOFTWARE PACKAGE LICENSE for
+* the governing permissions and limitations under the License.
+*
+*******************************************************************************/
+
+#ifndef AES_H_
+#define AES_H_
+
+#include "includes.h"
+
+/*******************************************************************************
+                        FUNCTION DECLARATIONS
+*******************************************************************************/
+#ifdef EN_AES_SA_ALGORITHM_SW
+
+void AES_MyProcessAES(sint8 *pData, sint32 pDataLen, sint8 *pKeyData, sint8 *pCipherBuf);
+void AES_aesDecryptCore(sint8 *paramIn, sint32 paramInLen, sint8 *paramKey, sint8 *paramOut);
+
+
+#endif
+
+#endif
+
+
+

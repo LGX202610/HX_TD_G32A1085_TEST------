@@ -1,0 +1,942 @@
+Dependencies for Project 'Ecu_Pedal', Target 'G32A10xx': (DO NOT MODIFY !)
+CompilerVersion: 6160000::V6.16::ARMCLANG
+F (..\..\Libraries\Device\Geehy\G32A10xx\Source\system_g32a10xx.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/system_g32a10xx.o -MD)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_fls.h)(0x6A16B3BA)
+F (..\..\Libraries\Device\Geehy\G32A10xx\Source\arm\startup_g32a10xx_mdk.s)(0x6A16B3BA)(--cpu Cortex-M0+ -g --pd "__MICROLIB SETA 1"-I"D:\Program Files\Keil_v5.36\ARM\ARMCC\Geehy\G32A10xx_DFP\1.0.1\Device\Include"--pd "__UVISION_VERSION SETA 536"--pd "CPU_G32A1085MAT0MLHx SETA 1"--list .\listings\g32a10xx\startup_g32a10xx_mdk.lst--xref -o .\out\g32a10xx\startup_g32a10xx_mdk.o--depend .\out\g32a10xx\startup_g32a10xx_mdk.d)
+F (..\..\Application\source\main.c)(0x6AC4A688)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/main.o -MD)
+I (..\..\Hal\include\hal_adc.h)(0x6AB3308E)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Hal\include\hal_dma.h)(0x6AA35B6C)
+I (..\..\Hal\include\hal_rtc.h)(0x6AA7E298)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (..\..\Hal\include\hal_iwdt.h)(0x6AACD432)
+I (..\..\Application\include\app_usart.h)(0x6AA7DBD6)
+I (..\..\Application\include\app_power.h)(0x6AB9BBA0)
+I (..\..\Application\include\app_timer.h)(0x6AA206EA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Application\include\app_canfd.h)(0x6AB4F6EC)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Application\include\app_led.h)(0x6AAE2D84)
+I (..\..\Application\include\app_pedal.h)(0x6AB61EA4)
+I (..\..\Application\include\motor_types.h)(0x6AB37CFC)
+I (..\..\CanNm\include\CanNm.h)(0x6A98CBF8)
+I (..\..\CanNm\include\CanNm_Types.h)(0x6AA27C0E)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\uds_port.h)(0x6AA26EB6)
+I (..\..\Uds\Port\user_versions.h)(0x6ABA38E0)
+I (..\..\Uds\Port\CRC_hal.h)(0x6AA2684A)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+F (..\..\Application\source\g32a10xx_int.c)(0x6AA4FA38)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_int.o -MD)
+I (..\..\Application\include\g32a10xx_int.h)(0x6AA152AE)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Driver\include\drv_tmr_base.h)(0x6AA206EA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_tmr.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Driver\include\drv_eint.h)(0x6AA206EC)
+I (..\..\Driver\include\drv_canfd.h)(0x6AA8E158)
+I (..\..\Driver\include\drv_rtc.h)(0x6AA7E2AE)
+F (..\..\Application\source\app_canfd.c)(0x6AB5CE58)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/app_canfd.o -MD)
+I (..\..\Application\include\app_canfd.h)(0x6AB4F6EC)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Hal\include\hal_canfd.h)(0x6AA8E1DC)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (..\..\Application\include\app_timer.h)(0x6AA206EA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\CanNm\include\CanNm.h)(0x6A98CBF8)
+I (..\..\CanNm\include\CanNm_Types.h)(0x6AA27C0E)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\CanNm\include\CanNm_Cfg.h)(0x6A98D706)
+I (..\..\Uds\Port\uds_port.h)(0x6AA26EB6)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+F (..\..\Application\source\app_timer.c)(0x6AA22700)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/app_timer.o -MD)
+I (..\..\Application\include\app_timer.h)(0x6AA206EA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Hal\include\hal_timer.h)(0x6AA29B9A)
+F (..\..\Application\source\app_power.c)(0x6AB24622)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/app_power.o -MD)
+I (..\..\Application\include\app_power.h)(0x6AB9BBA0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (..\..\Application\include\app_timer.h)(0x6AA206EA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Hal\include\hal_pmu.h)(0x6AA7E9A0)
+I (..\..\Hal\include\hal_adc.h)(0x6AB3308E)
+I (..\..\Hal\include\hal_canfd.h)(0x6AA8E1DC)
+I (..\..\CanNm\include\CanNm.h)(0x6A98CBF8)
+I (..\..\CanNm\include\CanNm_Types.h)(0x6AA27C0E)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Hal\include\hal_rtc.h)(0x6AA7E298)
+I (..\..\Hal\include\hal_drv8718.h)(0x6AA3603A)
+I (..\..\Hal\include\hal_timer.h)(0x6AA29B9A)
+I (..\..\Hal\include\hal_usart.h)(0x6AA35AB8)
+I (..\..\Hal\include\hal_dma.h)(0x6AA35B6C)
+I (..\..\Application\include\app_led.h)(0x6AAE2D84)
+I (..\..\Hal\include\hal_iwdt.h)(0x6AACD432)
+I (..\..\Application\include\app_motor.h)(0x6AB47D76)
+I (..\..\Application\include\motor_types.h)(0x6AB37CFC)
+F (..\..\Application\source\app_led.c)(0x6ABB15E0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/app_led.o -MD)
+I (..\..\Application\include\app_led.h)(0x6AAE2D84)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Hal\include\hal_led.h)(0x6AA35B42)
+I (..\..\Application\include\app_timer.h)(0x6AA206EA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+F (..\..\Application\source\app_pedal.c)(0x6AB63126)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/app_pedal.o -MD)
+I (..\..\Application\include\app_pedal.h)(0x6AB61EA4)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (..\..\Application\include\motor_types.h)(0x6AB37CFC)
+I (..\..\Application\include\app_motor.h)(0x6AB47D76)
+I (..\..\Application\include\app_timer.h)(0x6AA206EA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Application\include\app_power.h)(0x6AB9BBA0)
+I (..\..\Hal\include\hal_drv8718.h)(0x6AA3603A)
+F (..\..\Application\source\app_motor.c)(0x6AB5E500)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/app_motor.o -MD)
+I (..\..\Application\include\app_motor.h)(0x6AB47D76)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (..\..\Application\include\motor_types.h)(0x6AB37CFC)
+I (..\..\Hal\include\hal_motor.h)(0x6AB384A2)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+F (..\..\Application\source\app_usart.c)(0x6AA7DFF4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/app_usart.o -MD)
+I (..\..\Application\include\app_usart.h)(0x6AA7DBD6)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Hal\include\hal_usart.h)(0x6AA35AB8)
+F (..\..\Application\include\board.h)(0x6AB9CD4E)()
+F (..\..\Hal\source\hal_adc.c)(0x6AB32FFC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_adc.o -MD)
+I (..\..\Hal\include\hal_adc.h)(0x6AB3308E)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Driver\include\drv_adc.h)(0x6AA12EDE)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_adc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+F (..\..\Hal\source\hal_usart.c)(0x6AA7DA56)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_usart.o -MD)
+I (..\..\Hal\include\hal_usart.h)(0x6AA35AB8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Driver\include\drv_usart.h)(0x6AA206EC)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_usart.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+F (..\..\Hal\source\hal_dma.c)(0x6AA35B6C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_dma.o -MD)
+I (..\..\Hal\include\hal_dma.h)(0x6AA35B6C)
+I (..\..\Driver\include\drv_dma.h)(0x6AA12EE0)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_dma.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Driver\include\drv_adc.h)(0x6AA12EDE)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_adc.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+F (..\..\Hal\source\hal_canfd.c)(0x6AB4C220)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_canfd.o -MD)
+I (..\..\Hal\include\hal_canfd.h)(0x6AA8E1DC)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (..\..\Driver\include\drv_canfd.h)(0x6AA8E158)
+I (..\..\Driver\include\drv_gpio.h)(0x6AA3CA64)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+F (..\..\Hal\source\hal_timer.c)(0x6AA35AEC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_timer.o -MD)
+I (..\..\Hal\include\hal_timer.h)(0x6AA29B9A)
+I (..\..\Driver\include\drv_tmr_base.h)(0x6AA206EA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_tmr.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+F (..\..\Hal\source\hal_led.c)(0x6AA7E696)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_led.o -MD)
+I (..\..\Hal\include\hal_led.h)(0x6AA35B42)
+I (..\..\Driver\include\drv_gpio.h)(0x6AA3CA64)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+F (..\..\Hal\source\hal_buzzer.c)(0x6AA35BD4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_buzzer.o -MD)
+I (..\..\Hal\include\hal_buzzer.h)(0x6AA35BD2)
+I (..\..\Driver\include\drv_gpio.h)(0x6AA3CA64)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+F (..\..\Hal\source\hal_motor.c)(0x6AB3857C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_motor.o -MD)
+I (..\..\Hal\include\hal_motor.h)(0x6AB384A2)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Application\include\motor_types.h)(0x6AB37CFC)
+I (..\..\Hal\include\hal_adc.h)(0x6AB3308E)
+I (..\..\Driver\include\drv_tmr_pwm.h)(0x6AA15180)
+I (..\..\Driver\include\drv_gpio.h)(0x6AA3CA64)
+I (..\..\Driver\include\drv_adc.h)(0x6AA12EDE)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_adc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+F (..\..\Hal\source\hal_drv8718.c)(0x6AB484F8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_drv8718.o -MD)
+I (..\..\Hal\include\hal_drv8718.h)(0x6AA3603A)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (..\..\Driver\include\drv_spi.h)(0x6AA35CAE)
+I (..\..\Driver\include\drv_gpio.h)(0x6AA3CA64)
+F (..\..\Application\source\fifo.c)(0x6A768A96)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/fifo.o -MD)
+I (..\..\Application\include\fifo.h)(0x6A768A96)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+F (..\..\Hal\source\hal_pmu.c)(0x6AA7EA34)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_pmu.o -MD)
+I (..\..\Hal\include\hal_pmu.h)(0x6AA7E9A0)
+I (..\..\Driver\include\drv_pmu.h)(0x6AA7EA00)
+F (..\..\Hal\source\hal_iwdt.c)(0x6AACD9DC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_iwdt.o -MD)
+I (..\..\Hal\include\hal_iwdt.h)(0x6AACD432)
+I (..\..\Driver\include\drv_iwdt.h)(0x6AACD3E6)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_iwdt.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+F (..\..\Hal\source\hal_rtc.c)(0x6AACD9A4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/hal_rtc.o -MD)
+I (..\..\Hal\include\hal_rtc.h)(0x6AA7E298)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (..\..\Driver\include\drv_rtc.h)(0x6AA7E2AE)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+F (..\..\Driver\source\drv_spi.c)(0x6AA3D04E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_spi.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_spi.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+I (..\..\Application\include\board.h)(0x6AB9CD4E)
+I (..\..\Driver\include\drv_spi.h)(0x6AA35CAE)
+F (..\..\Driver\source\drv_adc.c)(0x6AA39C30)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_adc.o -MD)
+I (..\..\Driver\include\drv_adc.h)(0x6AA12EDE)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_adc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+I (..\..\Application\include\board.h)(0x6AB9CD4E)
+F (..\..\Driver\source\drv_gpio.c)(0x6AA797E0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_gpio.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Application\include\board.h)(0x6AB9CD4E)
+I (..\..\Driver\include\drv_gpio.h)(0x6AA3CA64)
+F (..\..\Driver\source\drv_dma.c)(0x6AA37636)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_dma.o -MD)
+I (..\..\Driver\include\drv_dma.h)(0x6AA12EE0)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_dma.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+F (..\..\Driver\source\drv_usart.c)(0x6AA39C66)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_usart.o -MD)
+I (..\..\Driver\include\drv_usart.h)(0x6AA206EC)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_usart.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+I (..\..\Application\include\board.h)(0x6AB9CD4E)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+F (..\..\Driver\source\drv_canfd.c)(0x6AA8DF88)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_canfd.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_can.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+I (..\..\Application\include\board.h)(0x6AB9CD4E)
+I (..\..\Driver\include\drv_canfd.h)(0x6AA8E158)
+I (..\..\Driver\include\drv_gpio.h)(0x6AA3CA64)
+F (..\..\Driver\source\drv_tmr_base.c)(0x6AA508A2)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_tmr_base.o -MD)
+I (..\..\Driver\include\drv_tmr_base.h)(0x6AA206EA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_tmr.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+F (..\..\Driver\source\drv_tmr_pwm.c)(0x6AA37678)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_tmr_pwm.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_tmr.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Application\include\board.h)(0x6AB9CD4E)
+I (..\..\Driver\include\drv_tmr_pwm.h)(0x6AA15180)
+F (..\..\Driver\source\drv_eint.c)(0x6AA37644)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_eint.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_eint.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Driver\include\drv_eint.h)(0x6AA206EC)
+F (..\..\Driver\source\drv_pmu.c)(0x6AA7EA54)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_pmu.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_pmu.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Driver\include\drv_pmu.h)(0x6AA7EA00)
+I (..\..\Driver\include\drv_gpio.h)(0x6AA3CA64)
+F (..\..\Driver\source\drv_iwdt.c)(0x6AACFD0C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_iwdt.o -MD)
+I (..\..\Driver\include\drv_iwdt.h)(0x6AACD3E6)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_iwdt.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+F (..\..\Driver\source\drv_rtc.c)(0x6AACD7C0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/drv_rtc.o -MD)
+I (..\..\Driver\include\drv_rtc.h)(0x6AA7E2AE)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rtc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_eint.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_pmu.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_adc.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_adc.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_adc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_can.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_can.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_can.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdlib.h)(0x603507D0)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_gpio.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_gpio.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_gpio.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_iwdt.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_iwdt.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_iwdt.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_rcm.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_rcm.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_tmr.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_tmr.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_tmr.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_usart.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_usart.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_usart.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_spi.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_spi.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_spi.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_misc.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_misc.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_dma.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_dma.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_dma.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_syscfg.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_syscfg.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_syscfg.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_eint.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_eint.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_eint.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_pmu.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_pmu.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_pmu.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_fls.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_fls.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_fls.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+F (..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_rtc.c)(0x6A16B3BA)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/g32a10xx_rtc.o -MD)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rtc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_rcm.h)(0x6A16B3BA)
+F (..\..\Uds\Port\uds_port.c)(0x6AA7C4C4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/uds_port.o -MD)
+I (..\..\Uds\Port\uds_port.h)(0x6AA26EB6)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Uds\Port\uds_can_if.h)(0x6AA26EBA)
+I (..\..\Application\include\app_timer.h)(0x6AA206EA)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Uds\UDS\inc\uds_app.h)(0x6AA0C552)
+I (..\..\Uds\UDS\inc\uds_app_cfg.h)(0x6ABB26F7)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\TP\inc\TP.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)
+I (..\..\Uds\Port\user_versions.h)(0x6ABA38E0)
+I (..\..\Uds\Port\CRC_hal.h)(0x6AA2684A)
+I (..\..\Uds\UDS\inc\uds_dtc_nvm.h)(0x6ABB26F4)
+I (..\..\Uds\Port\boot.h)(0x6AA26884)
+I (..\..\Uds\Port\boot_Cfg.h)(0x6AA26846)
+F (..\..\Uds\Port\uds_can_if.c)(0x6AB4F01A)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/uds_can_if.o -MD)
+I (..\..\Uds\Port\uds_port.h)(0x6AA26EB6)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Uds\Port\uds_can_if.h)(0x6AA26EBA)
+I (..\..\Application\include\app_canfd.h)(0x6AB4F6EC)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\TP\inc\TP.h)(0x6AA0C552)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)
+I (..\..\Hal\include\hal_canfd.h)(0x6AA8E1DC)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdbool.h)(0x603507CA)
+F (..\..\Uds\Port\uds_stub.c)(0x6AA7BE1C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/uds_stub.o -MD)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\Port\boot.h)(0x6AA26884)
+I (..\..\Uds\Port\boot_Cfg.h)(0x6AA26846)
+I (..\..\Uds\Port\fls_app.h)(0x6AA26846)
+I (..\..\Uds\Port\watchdog_hal.h)(0x6AA26848)
+I (..\..\Uds\Port\uds_alg_hal.h)(0x6AA26848)
+I (..\..\Uds\Port\uds_verify.h)(0x6AA2684A)
+I (..\..\Uds\Port\CRC_hal.h)(0x6AA2684A)
+I (..\..\Uds\Port\bootloader_debug.h)(0x6AA26846)
+I (..\..\Uds\UDS\inc\uds_app.h)(0x6AA0C552)
+I (..\..\Uds\UDS\inc\uds_app_cfg.h)(0x6ABB26F7)
+I (..\..\Uds\TP\inc\TP.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)
+F (..\..\Uds\Port\user_versions.c)(0x6ABB3337)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/user_versions.o -MD)
+I (..\..\Uds\Port\user_versions.h)(0x6ABA38E0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Uds\Port\CRC_hal.h)(0x6AA2684A)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+I (..\..\Uds\UDS\inc\uds_dtc_nvm.h)(0x6ABB26F4)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Uds\UDS\inc\uds_app_cfg.h)(0x6ABB26F7)
+I (..\..\Uds\TP\inc\TP.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp.h)(0x6AA0C552)
+I (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_fls.h)(0x6A16B3BA)
+F (..\..\Uds\Port\uds_dtc_nvm.c)(0x6ABB279B)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/uds_dtc_nvm.o -MD)
+I (..\..\Uds\UDS\inc\uds_dtc_nvm.h)(0x6ABB26F4)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Uds\Port\user_versions.h)(0x6ABA38E0)
+I (..\..\Uds\Port\CRC_hal.h)(0x6AA2684A)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+F (..\..\Uds\UDS\src\uds_app.c)(0x6AA9F9D8)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/uds_app.o -MD)
+I (..\..\Uds\UDS\inc\uds_app.h)(0x6AA0C552)
+I (..\..\Uds\UDS\inc\uds_app_cfg.h)(0x6ABB26F7)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\TP\inc\TP.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)
+I (..\..\Uds\Port\Boot.h)(0x6AA26884)
+I (..\..\Uds\Port\boot_Cfg.h)(0x6AA26846)
+I (..\..\Uds\Port\fls_app.h)(0x6AA26846)
+I (..\..\Uds\Port\uds_alg_hal.h)(0x6AA26848)
+I (..\..\Uds\Port\bootloader_debug.h)(0x6AA26846)
+F (..\..\Uds\UDS\src\uds_app_cfg.c)(0x6ABB2797)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/uds_app_cfg.o -MD)
+I (..\..\Uds\UDS\inc\uds_app_cfg.h)(0x6ABB26F7)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\TP\inc\TP.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)
+I (..\..\Uds\UDS\inc\uds_app.h)(0x6AA0C552)
+I (..\..\Uds\Port\fls_app.h)(0x6AA26846)
+I (..\..\Uds\Port\boot.h)(0x6AA26884)
+I (..\..\Uds\Port\boot_Cfg.h)(0x6AA26846)
+I (..\..\Uds\Port\watchdog_hal.h)(0x6AA26848)
+I (..\..\Uds\Port\uds_alg_hal.h)(0x6AA26848)
+I (..\..\Uds\Port\user_versions.h)(0x6ABA38E0)
+I (..\..\Uds\Port\CRC_hal.h)(0x6AA2684A)
+I (..\..\Uds\Port\uds_verify.h)(0x6AA2684A)
+I (..\..\Uds\Port\flash_hal_Cfg.h)(0x6AA26846)
+I (..\..\Uds\UDS\inc\uds_dtc_nvm.h)(0x6ABB26F4)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+F (..\..\Uds\TP\src\TP.c)(0x6AA0C552)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/tp.o -MD)
+I (..\..\Uds\TP\inc\TP.h)(0x6AA0C552)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)
+F (..\..\Uds\TP\src\TP_Cfg.c)(0x6AA0C552)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/tp_cfg.o -MD)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+F (..\..\Uds\TP\src\CAN_TP\can_tp.c)(0x6ABBA7C4)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/can_tp.o -MD)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp.h)(0x6AA0C552)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+I (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)
+F (..\..\Uds\TP\src\CAN_TP\can_tp_cfg.c)(0x6ABB9AD0)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/can_tp_cfg.o -MD)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+I (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)
+I (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)
+I (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)
+F (..\..\Uds\FIFO\src\multi_cyc_fifo.c)(0x6AA0C552)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/multi_cyc_fifo.o -MD)
+I (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)
+I (..\..\Uds\Port\includes.h)(0x6AAA3DE8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\string.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+I (..\..\Libraries\G32A10xx_StdPeriphDriver\inc\g32a10xx_misc.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+F (..\..\Uds\auto_lib\src\autolibc.c)(0x6A599696)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/autolibc.o -MD)
+I (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (..\..\Uds\Port\toolchain.h)(0x6AA26838)
+I (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)
+F (..\..\Uds\Port\uds_port.h)(0x6AA26EB6)()
+F (..\..\Uds\Port\uds_can_if.h)(0x6AA26EBA)()
+F (..\..\Uds\Port\includes.h)(0x6AAA3DE8)()
+F (..\..\Uds\Port\user_config.h)(0x6AAA3DE8)()
+F (..\..\Uds\Port\common_types.h)(0x6AA7C6CC)()
+F (..\..\Uds\Port\toolchain.h)(0x6AA26838)()
+F (..\..\Uds\Port\user_versions.h)(0x6ABA38E0)()
+F (..\..\Uds\Port\boot.h)(0x6AA26884)()
+F (..\..\Uds\Port\boot_Cfg.h)(0x6AA26846)()
+F (..\..\Uds\Port\fls_app.h)(0x6AA26846)()
+F (..\..\Uds\Port\CRC_hal.h)(0x6AA2684A)()
+F (..\..\Uds\Port\watchdog_hal.h)(0x6AA26848)()
+F (..\..\Uds\Port\uds_alg_hal.h)(0x6AA26848)()
+F (..\..\Uds\Port\uds_verify.h)(0x6AA2684A)()
+F (..\..\Uds\Port\flash_hal_Cfg.h)(0x6AA26846)()
+F (..\..\Uds\Port\bootloader_debug.h)(0x6AA26846)()
+F (..\..\Uds\UDS\inc\uds_app.h)(0x6AA0C552)()
+F (..\..\Uds\UDS\inc\uds_app_cfg.h)(0x6ABB26F7)()
+F (..\..\Uds\UDS\inc\uds_dtc_nvm.h)(0x6ABB26F4)()
+F (..\..\Uds\TP\inc\TP.h)(0x6AA0C552)()
+F (..\..\Uds\TP\inc\TP_cfg.h)(0x6AA26D9C)()
+F (..\..\Uds\TP\inc\CAN_TP\can_tp.h)(0x6AA0C552)()
+F (..\..\Uds\TP\inc\CAN_TP\can_tp_cfg.h)(0x6ABB9ACE)()
+F (..\..\Uds\FIFO\inc\multi_cyc_fifo.h)(0x6AA26D9E)()
+F (..\..\Uds\auto_lib\inc\autolibc.h)(0x6A599696)()
+F (..\..\CanNm\source\CanNm.c)(0x6AAA497C)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/cannm.o -MD)
+I (..\..\CanNm\include\CanNm_Types.h)(0x6AA27C0E)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\CanNm\include\CanNm_Cfg.h)(0x6A98D706)
+I (..\..\CanNm\include\CanNm.h)(0x6A98CBF8)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdio.h)(0x603507D4)
+F (..\..\CanNm\source\CanNm_Cbk.c)(0x6A8E557E)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/cannm_cbk.o -MD)
+I (..\..\CanNm\include\CanNm_Types.h)(0x6AA27C0E)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\CanNm\include\CanNm.h)(0x6A98CBF8)
+F (..\..\CanNm\source\CanNm_Lcfg.c)(0x6A98D706)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/cannm_lcfg.o -MD)
+I (..\..\CanNm\include\CanNm_Cfg.h)(0x6A98D706)
+I (..\..\CanNm\include\CanNm_Types.h)(0x6AA27C0E)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+F (..\..\CanNm\source\CanNm_Pnc.c)(0x6A9787DC)(-xc -std=c99 --target=arm-arm-none-eabi -mcpu=cortex-m0plus -c-fno-rtti -funsigned-char -fshort-enums -fshort-wchar-D__MICROLIB -gdwarf-4 -O0 -ffunction-sections -Wno-packed -Wno-missing-variable-declarations -Wno-missing-prototypes -Wno-missing-noreturn -Wno-sign-conversion -Wno-nonportable-include-path -Wno-reserved-id-macro -Wno-unused-macros -Wno-documentation-unknown-command -Wno-documentation -Wno-license-management -Wno-parentheses-equality -I ../../Libraries/CMSIS/Include -I ../../Libraries/Device/Geehy/G32A10xx/Include -I ../../Libraries/G32A10xx_StdPeriphDriver/inc -I ../../Driver/include -I ../../Hal/include -I ../../Application/include -I ../../Common -I ../../CanNm/include -I ../../Uds/Port -I ../../Uds/TP/inc -I ../../Uds/TP/inc/CAN_TP -I ../../Uds/UDS/inc -I ../../Uds/FIFO/inc -I ../../Uds/auto_lib/inc-I"D:/Program Files/Keil_v5.36/ARM/ARMCC/Geehy/G32A10xx_DFP/1.0.1/Device/Include"-D__UVISION_VERSION="536" -DCPU_G32A1085MAT0MLHx -DBOARD_G32A10xx_EVAL -DG32A10xx -DUDS_PROJECT_FOR_APP-o ./out/g32a10xx/cannm_pnc.o -MD)
+I (..\..\CanNm\include\CanNm_Pnc.h)(0x6A953358)
+I (..\..\CanNm\include\CanNm_Types.h)(0x6AA27C0E)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stdint.h)(0x603507D0)
+I (D:\Program Files\Keil_v5.36\ARM\ARMCLANG\include\stddef.h)(0x603507D0)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\g32a10xx.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\core_cm0plus.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_version.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_compiler.h)(0x6A16B3BA)
+I (..\..\Libraries\CMSIS\Include\cmsis_armclang.h)(0x6A16B3BA)
+I (..\..\Libraries\Device\Geehy\G32A10xx\Include\system_g32a10xx.h)(0x6A16B3BA)
+I (..\..\CanNm\include\CanNm_Cfg.h)(0x6A98D706)
+I (..\..\CanNm\include\CanNm.h)(0x6A98CBF8)
