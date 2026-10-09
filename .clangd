@@ -4,9 +4,9 @@ Index:
   Background: Skip
 
 If:
-  PathMatch: .*G32A10xx_Uds_Bootloader_V0\.00\.01_260928.*
+  PathMatch: .*G32A10xx_Uds_Bootloader_V0\.00\.01_261006.*
 CompileFlags:
-  CompilationDatabase: G32A10xx_Uds_Bootloader_V0.00.01_260928
+  CompilationDatabase: G32A10xx_Uds_Bootloader_V0.00.01_261006
   Add:
     - -std=c99
     - -DUDS_PROJECT_FOR_BOOTLOADER
@@ -16,9 +16,9 @@ CompileFlags:
     - -Wno-everything
 
 If:
-  PathMatch: .*G32A10xx_Uds_BootTransition_260928.*
+  PathMatch: .*G32A10xx_Uds_BootTransition_26092901.*
 CompileFlags:
-  CompilationDatabase: G32A10xx_Uds_BootTransition_260928
+  CompilationDatabase: G32A10xx_Uds_BootTransition_26092901
   Add:
     - -std=c99
     - -DUDS_PROJECT_FOR_BOOTLOADER

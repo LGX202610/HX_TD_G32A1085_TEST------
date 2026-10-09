@@ -4,36 +4,19 @@
     {
       "name": "G32A1085_Bootloader",
       "includePath": [
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/Boot/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/Debug/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/Hal/Crc_Hal/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/Hal/Flash_Hal/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/Hal/Timer_Hal/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/Hal/Uds_Algorithm_Hal/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/Hal/Watchdog_Hal/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/Public_Inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/devices/CMSIS/Include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/devices/Include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Can/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Can_UpLayerDriver/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Flash_UpLayerDriver/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Gpio/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Interrupt/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Rcm/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Tmr/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Usart/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Wdg/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Misc/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Flash/include",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/UDS_stack/unified_bootloader_stack/Source/auto_lib/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/UDS_stack/unified_bootloader_stack/Source/Demo/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/UDS_stack/unified_bootloader_stack/Source/FIFO/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/UDS_stack/unified_bootloader_stack/Source/Flash_App/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/UDS_stack/unified_bootloader_stack/Source/UDS_stack/TP/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/UDS_stack/unified_bootloader_stack/Source/UDS_stack/TP/inc/CAN_TP",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/UDS_stack/unified_bootloader_stack/Source/UDS_stack/UDS/inc",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/UDS_stack/unified_bootloader_stack/Source/UDS_stack/Versions",
-        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/UDS_stack/unified_bootloader_stack/Source/UDS_stack/EUC_Verify/include"
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Application/include",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Driver/include",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Hal/include",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Libraries/CMSIS/Include",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Libraries/Device/include",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Libraries/G32A10xx_StdPeriphDriver/inc",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Uds/auto_lib/inc",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Uds/FIFO/inc",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Uds/Flash/inc",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Uds/Port/inc",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Uds/TP/inc",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Uds/UDS/inc",
+        "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/Uds/Verify/inc"
       ],
       "defines": [
         "G32A1085",
@@ -49,12 +32,10 @@
       "cStandard": "c99",
       "cppStandard": "c++11",
       "intelliSenseMode": "gcc-arm",
-      "compileCommands": "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/compile_commands.json",
+      "compileCommands": "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006/compile_commands.json",
       "browse": {
         "path": [
-          "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Porting",
-          "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/UDS_stack",
-          "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_260928/Project/MDK/G32A1085_CAN_SDK/UDS_G32A1085_Bootloader"
+          "${workspaceFolder}/G32A10xx_Uds_Bootloader_V0.00.01_261006"
         ],
         "limitSymbolsToIncludedHeaders": true
       }
@@ -62,36 +43,19 @@
     {
       "name": "G32A1085_BootTransition",
       "includePath": [
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/Boot/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/Debug/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/Hal/Crc_Hal/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/Hal/Flash_Hal/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/Hal/Timer_Hal/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/Hal/Uds_Algorithm_Hal/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/Hal/Watchdog_Hal/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/Public_Inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/devices/CMSIS/Include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/devices/Include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Can/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Can_UpLayerDriver/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Flash_UpLayerDriver/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Gpio/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Interrupt/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Rcm/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Tmr/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Usart/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Wdg/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Misc/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting/SDK/G32A10xx_SDK/platform/drivers/Flash/include",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/UDS_stack/unified_bootloader_stack/Source/auto_lib/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/UDS_stack/unified_bootloader_stack/Source/Demo/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/UDS_stack/unified_bootloader_stack/Source/FIFO/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/UDS_stack/unified_bootloader_stack/Source/Flash_App/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/UDS_stack/unified_bootloader_stack/Source/UDS_stack/TP/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/UDS_stack/unified_bootloader_stack/Source/UDS_stack/TP/inc/CAN_TP",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/UDS_stack/unified_bootloader_stack/Source/UDS_stack/UDS/inc",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/UDS_stack/unified_bootloader_stack/Source/UDS_stack/Versions",
-        "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/UDS_stack/unified_bootloader_stack/Source/UDS_stack/EUC_Verify/include"
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Application/include",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Driver/include",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Hal/include",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Libraries/CMSIS/Include",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Libraries/Device/include",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Libraries/G32A10xx_StdPeriphDriver/inc",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Uds/auto_lib/inc",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Uds/FIFO/inc",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Uds/Flash/inc",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Uds/Port/inc",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Uds/TP/inc",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Uds/UDS/inc",
+        "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/Uds/Verify/inc"
       ],
       "defines": [
         "G32A1085",
@@ -107,12 +71,10 @@
       "cStandard": "c99",
       "cppStandard": "c++11",
       "intelliSenseMode": "gcc-arm",
-      "compileCommands": "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/compile_commands.json",
+      "compileCommands": "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901/compile_commands.json",
       "browse": {
         "path": [
-          "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Porting",
-          "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/UDS_stack",
-          "${workspaceFolder}/G32A10xx_Uds_BootTransition_260928/Project/MDK/G32A1085_CAN_SDK/UDS_G32A1085_BootTransition"
+          "${workspaceFolder}/G32A10xx_Uds_BootTransition_26092901"
         ],
         "limitSymbolsToIncludedHeaders": true
       }
@@ -146,7 +108,7 @@
         "path": [
           "${workspaceFolder}/260928-Ecu_Pdeal"
         ],
-        "limitSymbolsToIncludedHeaders": false
+        "limitSymbolsToIncludedHeaders": true
       }
     }
   ]

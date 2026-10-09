@@ -6,8 +6,10 @@
     "*.c": "c"
   },
   "editor.gotoLocation.multipleDefinitions": "peek",
+  "editor.gotoLocation.multipleDeclarations": "peek",
+  "editor.gotoLocation.multipleImplementations": "peek",
   "clangd.arguments": [
-    "--background-index=false",
+    "--background-index",
     "--clang-tidy=false",
     "--header-insertion=never",
     "--completion-style=detailed"

@@ -310,6 +310,10 @@ uint32 UDS_GetUDSS3WatermarkTimerMs(void);
 // APP主动发送诊断报文请求进入Bootloader模式
 boolean UDS_APP_SendMsgToHost(void);
 
+/* 0x28 普通通信：1=允许收发，0=关闭。上电默认允许。
+ * 只记录请求，不开关报文。应用层读这个标志去处理开关报文。 */
+extern volatile uint8 g_udsNormalCommEnable;
+
 // 0x3E新增函数声明（如果需要在外部调用）
 static uint8 UDS_APP_CheckAuthenticity(const UDS_APP_tLocalAppMsgType *pMsg);
 static uint8 UDS_APP_CheckVersion(const UDS_APP_tLocalAppMsgType *pMsg);

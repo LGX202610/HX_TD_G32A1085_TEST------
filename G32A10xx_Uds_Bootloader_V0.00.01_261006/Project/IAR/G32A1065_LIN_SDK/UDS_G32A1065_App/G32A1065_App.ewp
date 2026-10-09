@@ -352,33 +352,33 @@
                 </option>
                 <option>
                     <name>CCIncludePath2</name>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\devices\CMSIS\Include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\devices\Include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Flash\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Flash_UpLayerDriver\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Gpio\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Interrupt\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Lin\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Misc\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Rcm\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Tmr\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Usart\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Wdg\include</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\boot\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\Debug\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\crc_hal\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\flash_hal\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\timer_hal\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\UDS_algorithm_hal\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\watchdog_hal\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\public_inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\auto_lib\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\Demo\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\FIFO\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\Flash_App\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\UDS_stack\TP\inc</state>
-                    <state>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\UDS_stack\TP\inc\LIN_TP</state>
-                    <state>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\UDS_stack\UDS\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\CMSIS\Include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\Device\include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Driver\include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc</state>
+                    <state>$PROJ_DIR$\..\..\lin</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Uds\Port\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Hal\include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Hal\include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Hal\include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Hal\include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Uds\Verify\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Hal\include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Uds\Port\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Uds\auto_lib\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Application\include</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Uds\FIFO\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Uds\Flash\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Uds\TP\inc</state>
+                    <state>$PROJ_DIR$\..\..\LIN_TP\inc</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Uds\UDS\inc</state>
                 </option>
                 <option>
                     <name>CCStdIncCheck</name>
@@ -811,7 +811,7 @@
                 </option>
                 <option>
                     <name>IlinkIcfFile</name>
-                    <state>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\devices\link\iar\iar_flash_g32a1065_app.icf</state>
+                    <state>$PROJ_DIR$\..\..\..\..\Libraries\Device\iar\iar_flash_g32a1065_app.icf</state>
                 </option>
                 <option>
                     <name>IlinkIcfFileSlave</name>
@@ -2177,43 +2177,43 @@
     <group>
         <name>Platform</name>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\devices\Source\iar\startup_g32a10xx_iar.s</name>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\Device\source\startup_g32a10xx_iar.s</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\devices\Source\system_g32a10xx.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\Device\source\system_g32a10xx.c</name>
         </file>
     </group>
     <group>
         <name>Sdk</name>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Flash_UpLayerDriver\src\flash.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\Driver\source\flash.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Flash\src\g32a10xx_fls.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_fls.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Gpio\src\g32a10xx_gpio.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_gpio.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Interrupt\src\g32a10xx_int.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_int.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Wdg\src\g32a10xx_iwdt.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_iwdt.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Misc\src\g32a10xx_misc.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_misc.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Rcm\src\g32a10xx_rcm.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_rcm.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Tmr\src\g32a10xx_tmr.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_tmr.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Usart\src\g32a10xx_usart.c</name>
+            <name>$PROJ_DIR$\..\..\..\..\Libraries\G32A10xx_StdPeriphDriver\src\g32a10xx_usart.c</name>
         </file>
         <file>
-            <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_SDK\platform\drivers\Lin\src\lin_app.c</name>
+            <name>$PROJ_DIR$\..\..\lin\lin_app.c</name>
         </file>
     </group>
     <group>
@@ -2221,22 +2221,22 @@
         <group>
             <name>Boot</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\boot\src\boot.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Uds\Port\src\boot.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\boot\src\boot_Cfg.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Uds\Port\src\boot_Cfg.c</name>
             </file>
         </group>
         <group>
             <name>Debug</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\Debug\src\bootloader_debug.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Hal\source\bootloader_debug.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\Debug\src\debug_IO.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Hal\source\debug_IO.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\Debug\src\debug_timer.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Hal\source\debug_timer.c</name>
             </file>
         </group>
         <group>
@@ -2244,40 +2244,40 @@
             <group>
                 <name>Crc_Hal</name>
                 <file>
-                    <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\crc_hal\src\CRC_hal.c</name>
+                    <name>$PROJ_DIR$\..\..\..\..\Hal\source\CRC_hal.c</name>
                 </file>
             </group>
             <group>
                 <name>Flash_Hal</name>
                 <file>
-                    <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\flash_hal\src\flash_hal.c</name>
+                    <name>$PROJ_DIR$\..\..\..\..\Hal\source\flash_hal.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\flash_hal\src\flash_hal_Cfg.c</name>
+                    <name>$PROJ_DIR$\..\..\..\..\Hal\source\flash_hal_Cfg.c</name>
                 </file>
             </group>
             <group>
                 <name>Timer_Hal</name>
                 <file>
-                    <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\timer_hal\src\timer_hal.c</name>
+                    <name>$PROJ_DIR$\..\..\..\..\Hal\source\timer_hal.c</name>
                 </file>
             </group>
             <group>
                 <name>Uds_Algorithm_Hal</name>
                 <file>
-                    <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\UDS_algorithm_hal\src\AES.c</name>
+                    <name>$PROJ_DIR$\..\..\..\..\Uds\Verify\src\AES.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\UDS_algorithm_hal\src\UDS_alg_hal.c</name>
+                    <name>$PROJ_DIR$\..\..\..\..\Uds\Verify\src\UDS_alg_hal.c</name>
                 </file>
                 <file>
-                    <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\UDS_algorithm_hal\src\ZLGKey.c</name>
+                    <name>$PROJ_DIR$\..\..\..\..\Uds\Verify\src\ZLGKey.c</name>
                 </file>
             </group>
             <group>
                 <name>Watchdog_Hal</name>
                 <file>
-                    <name>$PROJ_DIR$\..\..\..\..\Porting\SDK\G32A10xx_LIN\HAL\watchdog_hal\src\watchdog_hal.c</name>
+                    <name>$PROJ_DIR$\..\..\..\..\Hal\source\watchdog_hal.c</name>
                 </file>
             </group>
         </group>
@@ -2287,49 +2287,49 @@
         <group>
             <name>Auto_Lib</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\auto_lib\src\autolibc.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Uds\auto_lib\src\autolibc.c</name>
             </file>
         </group>
         <group>
             <name>Demo</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\Demo\src\bootloader_main.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Application\source\bootloader_main.c</name>
             </file>
         </group>
         <group>
             <name>Fifo</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\FIFO\src\multi_cyc_fifo.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Uds\FIFO\src\multi_cyc_fifo.c</name>
             </file>
         </group>
         <group>
             <name>Flash_App</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\Flash_App\src\fls_app.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Uds\Flash\src\fls_app.c</name>
             </file>
         </group>
         <group>
             <name>Lin_Tp</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\UDS_stack\TP\src\LIN_TP\LIN_tp.c</name>
+                <name>$PROJ_DIR$\..\..\LIN_TP\src\LIN_tp.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\UDS_stack\TP\src\LIN_TP\LIN_tp_cfg.c</name>
+                <name>$PROJ_DIR$\..\..\LIN_TP\src\LIN_tp_cfg.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\UDS_stack\TP\src\TP.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Uds\TP\src\TP.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\UDS_stack\TP\src\TP_Cfg.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Uds\TP\src\TP_Cfg.c</name>
             </file>
         </group>
         <group>
             <name>Uds</name>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\UDS_stack\UDS\src\uds_app.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Uds\UDS\src\uds_app.c</name>
             </file>
             <file>
-                <name>$PROJ_DIR$\..\..\..\..\UDS_stack\unified_bootloader_stack\Source\UDS_stack\UDS\src\uds_app_cfg.c</name>
+                <name>$PROJ_DIR$\..\..\..\..\Uds\UDS\src\uds_app_cfg.c</name>
             </file>
         </group>
     </group>

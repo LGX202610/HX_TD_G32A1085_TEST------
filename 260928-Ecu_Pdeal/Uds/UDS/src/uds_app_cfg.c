@@ -10,6 +10,9 @@
 #include "flash_hal_Cfg.h"
 #include "uds_dtc_nvm.h"
 
+/* 0x28 普通通信开关。1=允许，0=关闭。应用层读取后自行开关报文。 */
+volatile uint8 g_udsNormalCommEnable = 1u;
+
 /* UDS协议标准时间配置表，存放P2、P2*等服务响应超时参数 */
 const UDS_APP_tTimeInfoStructType g_udsTimeConfigTable =
 {
@@ -798,10 +801,27 @@ static void UDS_APP_CtrlDtcSetting(struct UDS_APP_ServiceInfoType *pLocalSrv, UD
 static void UDS_APP_CommunicationSetting(struct UDS_APP_ServiceInfoType *pLocalSrv, UDS_APP_tLocalAppMsgType *pLocalMsg)
 {
     uint8 ucLocalCmd = 0u;
+    uint8 ucCommType = 0u;
     ASSERT(NULL_PTR == pLocalMsg);
     ASSERT(NULL_PTR == pLocalSrv);
 
     ucLocalCmd = pLocalMsg->aDataBuf[1u]; // 通信控制子功能
+    if (pLocalMsg->xDataMsgLength >= 3u)
+    {
+        ucCommType = pLocalMsg->aDataBuf[2u];
+    }
+    /* bit0=普通通信。只记标志，不在这里开关报文。0x80/0x83 是抑制正响应的同一条命令。 */
+    if (0u != (ucCommType & 0x01u))
+    {
+        if ((0x00u == ucLocalCmd) || (0x80u == ucLocalCmd))
+        {
+            g_udsNormalCommEnable = 1u;
+        }
+        else if ((0x03u == ucLocalCmd) || (0x83u == ucLocalCmd))
+        {
+            g_udsNormalCommEnable = 0u;
+        }
+    }
 
     if (0x00u == ucLocalCmd)//00 允许收发
     {
